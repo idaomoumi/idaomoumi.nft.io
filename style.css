@@ -47,7 +47,7 @@ body {
   grid-area: time-left;
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 8px;
   justify-content: end;
   margin-right: 0.4rem;
 }
