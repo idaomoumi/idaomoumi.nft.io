@@ -1,0 +1,144 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+}
+.container {
+  width: 30%;
+  /* height: 50%; */
+  margin: auto;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+}
+.wrapper {
+  margin: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.6fr 0.6fr 0.4fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hero hero ."
+    "row-1 row-1 ."
+    "price time-left ."
+    "creation creation .";
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.row-1 {
+  grid-area: row-1;
+}
+
+.price {
+  grid-area: price;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-left {
+  grid-area: time-left;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  justify-content: end;
+  margin-right: 0.4rem;
+}
+
+.creation {
+  grid-area: creation;
+}
+
+.hero img {
+  border-radius: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.row-1 .title {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.price p {
+  color: hsl(178, 100%, 50%);
+}
+.creation {
+  border-top: 1px solid hsla(215, 52%, 70%, 0.262);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* padding-top: 0.2rem; */
+}
+.creation img {
+  max-width: 2rem;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+}
+span {
+  color: white;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 40%;
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    width: 50%;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .row-1 .title {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 488px) {
+  .container {
+    width: 60%;
+  }
+  .row-1 .title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 416px) {
+  .container {
+    width: 70%;
+  }
+  .row-1 .title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 365px) {
+  .container {
+    width: 80%;
+  }
+  .row-1 .title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+  .row-1 .title {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 282px) {
+  .container {
+    width: 100%;
+  }
+}
